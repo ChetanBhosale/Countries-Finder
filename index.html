@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        body{
+            height: 100%;
+        }
+
+        .header {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 450px;
+            width: 100%;
+            background-image: url(Images/Globe_Image.jpg);
+            background-size: cover;
+            background-position: center center;
+        }
+
+        .container {
+            text-align: center;
+            color: white;
+        }
+
+        .head-title {
+            letter-spacing: 20px;
+            font-size: 50px;
+        }
+
+        .text {
+            margin-top: 10px;
+        }
+
+        .child-container {
+            margin: 30px 10px 20px 10px;
+        }
+
+        button {
+            background-color: rgb(91, 0, 175);
+            color: white;
+            padding: 10px 10px;
+            margin: 2px;
+            border: 0px;
+            border-radius: 10px;
+        }
+
+        /* button:hover {
+            background-color: rgb(117, 12, 215);
+        } */
+
+        /* button:active {
+            background-color: rgb(69, 4, 129);
+            color: white;
+        } */
+
+        .search-bar {
+            width: 400px;
+            padding: 10px 12px;
+            border: 1px solid rgb(91, 0, 175);
+            border-radius: 50px;
+            text-align: center;
+        }
+
+        .search-bar:hover {
+            border: 2px solid rgb(117, 12, 215),
+        }
+
+
+        .fetchContainer {
+            margin: 80px 100px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="head-title">WORLD COUNTRIES LIST</h1>
+            <p class="text">Loading....</p>
+            <p class="featured text"></p>
+
+            <div class="child-container">
+                <button onclick="remove()">STARTING WORD</button>
+                <button onclick="remove()">SEARCH WITH ANY WORD</button>
+                <button onclick="display()">A!</button>
+            </div>
+
+            <div class="searchDiv">
+                <input type="text" class="search-bar" placeholder="Search Countries...." ">
+            </div>
+        </div>
+    </header>
+    <div class="fetchContainer">
+    </div>
+    <script src="feature.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
